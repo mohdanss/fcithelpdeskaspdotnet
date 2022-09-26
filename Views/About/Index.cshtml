@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8" />
 
-    <title>Home | FCIT Help Desk</title>
+    <title>About | FCIT Help Desk</title>
 
     <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
 
     <!-------------stylesheet ------------------>
     <link rel="stylesheet"
           type="text/css"
-          href="~/css/welcome.css"
+          href="~/css/about.css"
           media="only screen and (min-width:901px)" />
 
     <!-------------Fav-Icon------------------>
@@ -69,20 +69,22 @@
             <div class="navbarCourses-container">
                 <div class="navbarCourses">
                     <div class="logocoursescontainer">
-                        <a href="Home" class="logotext"><span class="logospan">FCIT </span>HelpDesk</a>
+                        <a href="Home" class="logotext"><span class="logospan">FCIT </span>&nbsp; HelpDesk</a>
                     </div>
 
                     <div class="navMenuCoursesMain">
                         <ul class="navmenucourses">
                             <li>
-                                <a href="Home" target="_blank" style="color: #00adb5">home</a>
+                                <a href="Home" target="_blank">home</a>
                             </li>
-                            <li><a href="About">About</a></li>
-                            <li><a href="Courses">courses</a></li>
-                            <li><a href="Team">Team</a></li>
-                            <li><a href="SocialMedia">Updates</a></li>
-                            <li><a href="Contact">contact</a></li>
-                            <li><a href="Contribution">contribute</a></li>
+                            <li>
+                                <a href="About" style="color: #00adb5">About</a>
+                            </li>
+                            <li><a href="/Courses">courses</a></li>
+                            <li><a href="/Team">Team</a></li>
+                            <li><a href="/Socialmedia">updates</a></li>
+                            <li><a href="/Contact">contact</a></li>
+                            <li><a href="/Contribution">contribute</a></li>
                             <li>
                                 <div class="dropdownCourse">
                                     <button class="dropdownMenuButton btn dropdown-toggle"
@@ -91,20 +93,10 @@
                                             data-toggle="dropdown"
                                             aria-haspopup="true"
                                             aria-expanded="false">
-                                        @ViewBag.user.Fname
+                                        @ViewBag.User.Fname
                                     </button>
-                                    <div class="dropdown-menu"
-                                         aria-labelledby="dropdownMenuButton">
-                                        <!--
-                                        <a class="dropdown-item-Courses"
-                                           href="UserProfile"
-                                           selected>My Profile</a>
-                                        <a class="dropdown-item-Courses"
-                                           href="AdminSite"
-                                           id="adminPanel"
-                                           style="display: none">Go to Admin Panel</a>
-                                        -->
-                                        <a class="dropdown-item-Courses" href="Home/Logout">Log out</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item-Courses" href="Home/logout">Log out</a>
                                     </div>
                                 </div>
                             </li>
@@ -113,23 +105,25 @@
                 </div>
             </div>
 
-            <div class="center-items-container">
-                <div class="tagline-container">
-                    <div class="tagline">
-                        WELCOME
-                        <span class="username-tagline">&nbsp; @ViewBag.user.Fname</span>,
-                        to FCIT HELP DESK
-                    </div>
+            <div class="about-center-items">
+                <div class="about-head-container">
+                    <p class="about-head">About FHD!</p>
                 </div>
-                <div class="introlines-container">
-                    <p class="introlines">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                        debitis voluptatibus omnis autem. Quam laborum consectetur aliquam
-                        id eum! Provident!
+
+                <div class="about-gyaan-container">
+                    <p class="about-gyaan-text">
+                        FCIT Help Desk is an online platform, that basically focuses to
+                        help students access the notes, books and other (teacher’s
+                        specific notes) at single platform. As none of the student
+                        individually has all that material so it is an initiative so one
+                        can share the material he or she has, and on the same platform can
+                        access to others’ notes. Along with the helping material, it also
+                        provides utilities for the students like official updates, CGPA
+                        calculator and blogs (upcoming IA).
                     </p>
                 </div>
-                <div class="explore-btn-container">
-                    <a href="Courses" class="explore-btn">Explore us!</a>
+                <div class="about-il-container">
+                    <img src="images/svgs/about-us-01.svg" alt="" />
                 </div>
             </div>
             <script>
